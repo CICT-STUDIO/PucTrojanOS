@@ -1,0 +1,5 @@
+echo "系统:$NAME
+系统版本:$VER
+系统介绍:$SYSJS
+出厂商:$CNAME
+系统开发编程语言:Bash"

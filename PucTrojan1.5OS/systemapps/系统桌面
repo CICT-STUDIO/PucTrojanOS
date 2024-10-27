@@ -1,0 +1,5 @@
+ls app/
+echo -ne "软件:"
+read n
+source app/$n
+source app/系统桌面

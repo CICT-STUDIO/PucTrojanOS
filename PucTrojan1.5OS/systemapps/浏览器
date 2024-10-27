@@ -1,0 +1,3 @@
+echo -ne "URL:"
+read f
+source $xtmn/URL/$f

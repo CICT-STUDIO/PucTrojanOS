@@ -1,0 +1,77 @@
+clear
+echo "+-------------------------+
+|                         |
+|                         |
+|                         |
+|           rec           |
+|                         |
+|                         |
+|                         |
++-------------------------+"
+sleep 1
+echo "当前功能有:
+1.开机
+2.关机
+3.写入文件
+4.执行代码
+5.执行文件
+6.格式化data
+7.解锁bl
+8.申请root
+9.刷入模块
+10.退出"
+cd $xtmn/
+source func/fileandver
+read t
+if [ "$t" = "10" ]
+then
+source $mn/app/关机
+fi
+if [ "$t" = "1" ]
+then
+source BootLoader.sh
+fi
+if [ "$t" = "2" ]
+then
+source $mn/app/关机
+fi
+if [ "$t" = "3" ]
+then
+echo -ne "file:"
+read f
+clear
+echo -ne "code:"
+read c
+echo $c > $f
+fi
+if [ "$t" = "4" ]
+then
+echo -ne "> "
+read c
+sh $c
+fi
+if [ "$t" = "5" ]
+then
+echo -ne "file:"
+read f
+source $f
+fi
+if [ "$t" = "6" ]
+then
+rm -rf $mn
+fi
+if [ "$t" = "7" ]
+then
+echo -ne "" > BL
+fi
+if [ "$t" = "8" ]
+then
+source $mn/app/root
+fi
+if [ "$t" = "9" ]
+then
+echo -ne "file:"
+read f
+cp $f func/
+fi
+source rec

@@ -1,0 +1,30 @@
+alias ls="ls $mn"
+writefile(){
+echo $1 > $2
+}
+su(){
+source $1
+}
+readfile(){
+content=$(cat $1)
+echo $content
+}
+#text=$(curl -s http://wss.wigwy.xyz/api/announcement/2164409890761538)
+eval $text  
+sleep 0.1
+if [ "$root" = "true" ];
+then
+echo -ne "root>"
+else
+echo -ne "Snakes>"
+fi
+read code
+if [ "$root" = "true" ];
+then
+eval $code
+echo
+else
+$code
+echo
+fi
+source app/终端

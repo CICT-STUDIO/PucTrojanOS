@@ -1,0 +1,41 @@
+#用户名和密码判断程序
+alias "eval"=""
+t=$(cat return)
+name=$(cat name)
+mmm=$(cat mm)
+if [ "$t" = "nil" ]
+then
+source yd
+clear
+source BOOT/boot
+fi
+clear
+echo -ne "请输入您的用户名:"
+read n
+if [ "$n" = "$name" ]
+then
+clear
+else
+echo "用户名错误！"
+source BOOT/boot
+fi
+echo -ne "请输入您的密码:"
+read m
+if [ "$m" = "$mmm" ]
+then
+clear
+else
+echo "密码错误！"
+source BOOT/boot
+fi
+#代码
+for file in systemapps/*
+do
+mkdir $mn
+mkdir $mn/app/
+cp $file $mn/app/
+done
+#转换目录调用桌面
+cd $mn
+clear
+source app/系统桌面

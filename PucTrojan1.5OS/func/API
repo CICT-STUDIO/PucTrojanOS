@@ -1,0 +1,60 @@
+jdt(){
+source $xtmn/加载
+}
+printf(){
+echo $1
+}
+print(){
+echo $1
+}
+readfile(){
+echo $(cat $1)
+}
+writefile(){
+echo -ne $1 > $2
+}
+audio(){
+clear
+}
+system(){
+eval $1
+}
+offboot(){
+source $xtmn/BootLoader.sh
+}
+ifconfig(){
+curl ifconfig.me
+}
+panda(){
+curl -s $1
+}
+uname(){
+echo "Puc Trojan"
+}
+dd(){
+echo -ne "$1" > $xtmn/$2
+}
+rmdd(){
+rm -rf $xtmn/$1
+}
+catdd(){
+echo "$(cat $xtmn/$1)"
+}
+runapp(){
+source $mn/app/$1
+}
+exitapp(){
+source $mn/app/系统桌面
+}
+su(){
+source $1
+}
+ver(){
+echo $VER
+}
+cname(){
+echo $CNAME
+}
+sysjs(){
+echo $SYSJS
+}

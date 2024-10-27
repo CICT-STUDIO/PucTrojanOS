@@ -1,0 +1,30 @@
+echo -ne "请输入名片密码:"
+read m
+if [ "$m" = "王拓傻逼" ]
+then
+clear
+echo "密码正确!"
+sleep 1
+clear
+echo -ne "您在王拓群里的名称:"
+read n
+clear
+echo -ne "您在王拓群里是否有管理员(是/否)"
+read t
+clear
+echo -ne "请输入群等级:"
+read d
+clear
+echo -ne "请输入您的称号:"
+read c
+clear
+echo -ne "$n卧底在王拓群里的资料表:
+名称:$n
+是否管理:$t
+群等级:$d
+称号:$c
+此名片为交头名片，对方必须出示才可相信
+(10秒钟后消失)"
+sleep 10
+clear
+fi

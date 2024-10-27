@@ -1,0 +1,26 @@
+clear
+echo "+-------------------------+
+|                         |
+|                         |
+|                         |
+|        正在关机中       |
+|                         |
+|                         |
+|                         |
++-------------------------+"
+sleep 2
+clear
+while true
+do
+read t
+if [ "$t" = "开机" ]
+then
+cd $xtmn
+source BootLoader.sh
+fi
+if [ "$t" = "rec" ]
+then
+source $xtmn/rec
+fi
+clear
+done

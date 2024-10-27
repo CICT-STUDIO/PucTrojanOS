@@ -1,0 +1,6 @@
+mn="/storage/emulated/0/SIGNMN"
+xtmn=$(pwd)
+VER=$(cat ver)
+NAME="SIGN"
+CNAME="SIGN工作室"
+SYSJS="该内核是基于Linux而产生的内核,由SIGN工作室协助开发"

@@ -1,0 +1,47 @@
+echo "+-------------------------+
+|                         |
+|                         |
+|                         |
+|       Puc Trojan        |
+|                         |
+|                         |
+|                         |
++-------------------------+"
+echo "欢迎使用Puc Trojan，你看到的界面是我们的引导界面，请输入下一步"
+read text
+if [ "$text" = "下一步" ]
+then
+clear
+echo -ne "请输入你想设置的用户名:"
+read na
+echo -ne $na > name
+clear
+echo -ne "请输入你想设置的用户密码:"
+read m
+echo -ne $m > mm
+clear
+echo -ne "请输入数据目录:"
+read m
+echo 'mn="'$m$'"
+xtmn=$(pwd)
+VER=$(cat ver)
+NAME="SIGN"
+CNAME="SIGN工作室"
+SYSJS="该内核是基于Linux而产生的内核,由SIGN工作室协助开发"' > func/fileandver
+echo "正在重启中..."
+sleep 0.1
+clear
+echo "正在重启中"
+sleep 0.1
+clear
+echo "正在重启中."
+sleep 0.1
+clear
+echo "正在重启中.."
+sleep 0.1
+clear
+echo "正在重启中..."
+sleep 0.1
+clear
+echo -ne "1" > return
+fi
