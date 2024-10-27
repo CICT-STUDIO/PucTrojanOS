@@ -1,7 +1,7 @@
 # PucTrojanOS
 A Linux-based operating system
 # How to use it?
-Hey! I recommend that you use a translation software because only here it is in English
+Hey! I recommend that you use a translation software because here only it is in English
 If you have any questions, please feel free to contact me
 
 
